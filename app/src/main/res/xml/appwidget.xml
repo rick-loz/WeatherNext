@@ -1,0 +1,9 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="288dp"
+    android:minHeight="75dp"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/widget"
+    android:resizeMode="none"
+    android:widgetCategory="home_screen|keyguard"
+    android:previewImage="@drawable/weave3">
+</appwidget-provider>

@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round2">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--°C"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold|italic"/>
+    <TextView
+        android:id="@+id/tempup"
+        android:layout_toRightOf="@id/textView"
+        android:textColor="#ff3f3f"
+        android:textSize="20sp"
+        android:text="+ 0"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/tempdown"
+        android:layout_toRightOf="@id/textView"
+        android:layout_below="@id/tempup"
+        android:textColor="#3fbfff"
+        android:textSize="20sp"
+        android:text="- 0"
+        android:paddingLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:text="--"
+        android:paddingLeft="30dp"
+        android:paddingTop="5dp"
+        android:textColor="#fff"
+        android:layout_below="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/text2"/>
+
+    <ImageView
+        android:id="@+id/weather"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="80dp"
+        android:paddingRight="10dp"
+        android:layout_height="70dp" />
+    <ImageView
+        android:layout_alignTop="@id/weather"
+        android:layout_alignRight="@id/weather"
+        android:id="@+id/weather2"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <LinearLayout
+        android:weightSum="5"
+        android:id="@+id/linear"
+        android:layout_alignParentBottom="true"
+        android:foregroundGravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/round"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/cold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/cold"/>
+        <ImageView
+            android:id="@+id/hot"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/hot"/>
+        <ImageView
+            android:id="@+id/rainy"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/raining"/>
+        <ImageView
+            android:id="@+id/thunder"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bolt"/>
+        <ImageView
+            android:id="@+id/snow"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/snow"/>
+    </LinearLayout>
+
+</RelativeLayout>
